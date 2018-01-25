@@ -70,13 +70,13 @@ a {
 
 .dropdown {
     position: absolute;
-    top: 0px;
+    padding: 15px 15px 10px 16px;
     left: 100%;
     float: right;
     background-color: #484848;
     z-index: 2;
     min-width: 252px;
-    padding-left: 10px;
+    top: 0px;
     cursor: default;
 }
 
