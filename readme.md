@@ -18,3 +18,13 @@ Bonuses: Don't use any images.  Keep it simple, don't overuse JavaScript.  Prior
 ## Solution
 
 https://drewbefore.github.io/skills-assessment/
+
+### Known Bugs
+
+* Background doesn't gray out
+    * Solution : Create an opaque div around all lists, default to hidden. When a name item is selected enable the div.
+* Selecting multiple names
+    * Currently : Each click on a name item will generate a new dropdown div with details, without hiding any other visible dropdowns.
+    * Solution : 
+        1. Set up with bootstrap Active class allowing only one class to be active at at a time
+        2. Loop through javascript and deactive others before Activating the name that was clicked on.

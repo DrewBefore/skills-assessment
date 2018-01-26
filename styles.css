@@ -1,3 +1,7 @@
+body {
+    padding-top: 25px;
+}
+
 .circle {
     border: 1px solid black;
     display: inline-block;
@@ -25,13 +29,14 @@
     border-top-right-radius: 10px;
     background-color: #3e3e3e;
     font-size: 20px;
-    padding: 10px 15px;
+    padding: 15px 15px;
 }
 
 li {
     color: white;
     font-size: 1em;
 }
+
 li:nth-child(2n) {
     background-color: #1a1a1a;
 }
@@ -40,12 +45,12 @@ li:nth-child(2n) {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #262626;
-    height: 50px;
+    height: 60px;
 }
 
 .selector {
     float: right;
-    margin: 15px;
+    margin: 18px;
     border-radius: 8px;
 }
 
@@ -88,8 +93,4 @@ a {
 .widget {
     border-radius: 10px;
     box-shadow: 5px 10px 10px #888888;
-}
-
-.test {
-    border: 1px solid red;
 }
