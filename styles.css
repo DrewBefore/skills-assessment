@@ -46,6 +46,7 @@ li:nth-child(2n) {
 .selector {
     float: right;
     margin: 15px;
+    border-radius: 8px;
 }
 
 .list-group-item {
@@ -89,6 +90,6 @@ a {
     box-shadow: 5px 10px 10px #888888;
 }
 
-select {
-    border-radius: 8px;
+.test {
+    border: 1px solid red;
 }

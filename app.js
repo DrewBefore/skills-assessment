@@ -1,12 +1,12 @@
 var contacts = [
-    { name: 'Christain', email: 'Christain@yahoo.com', phone: '325-555-1234', address: '6535 Wilton Ave. </br> Cilver City CA 90234', status: 'online' },
-    { name: 'Rich', email: 'Rich@tripod.com', phone: '325-555-1234', address: '6535 Wilton Ave. </br> Cilver City CA 90234', status: 'online' },
-    { name: 'Scott', email: 'Scott@mailinator.com', phone: '325-555-1234', address: '6535 Wilton Ave. </br> Cilver City CA 90234', status: 'online' },
-    { name: 'Danny', email: 'Danny@hotmail.com', phone: '325-555-1234', address: '6535 Wilton Ave. </br> Cilver City CA 90234', status: 'online' },
-    { name: 'Taka', email: 'Taka@myspace.com', phone: '325-555-1234', address: '6535 Wilton Ave. </br> Cilver City CA 90234', status: 'offline' },
-    { name: 'Tim', email: 'Tim@netscape.com', phone: '325-555-1234', address: '6535 Wilton Ave. </br> Cilver City CA 90234', status: 'busy' },
-    { name: 'Patrick', email: 'Patrick@live.com', phone: '325-555-1234', address: '6535 Wilton Ave. </br> Cilver City CA 90234', status: 'online' },
-    { name: 'Jacques', email: 'Jacques@aol.com', phone: '325-555-1234', address: '6535 Wilton Ave. </br> Cilver City CA 90234', status: 'online' }
+    { name: 'Christian', email: 'christian@yahoo.com', phone: '323-555-1234', address: '6539 Wilton Ave. </br> Culver City CA 90234', status: 'online' },
+    { name: 'Rich', email: 'rich@tripod.com', phone: '323-555-1234', address: '6539 Wilton Ave. </br> Culver City CA 90234', status: 'online' },
+    { name: 'Scott', email: 'scott@mailinator.com', phone: '323-555-1234', address: '6539 Wilton Ave. </br> Culver City CA 90234', status: 'online' },
+    { name: 'Danny', email: 'danny@hotmail.com', phone: '323-555-1234', address: '6539 Wilton Ave. </br> Culver City CA 90234', status: 'online' },
+    { name: 'Taka', email: 'taka@myspace.com', phone: '323-555-1234', address: '6539 Wilton Ave. </br> Culver City CA 90234', status: 'offline' },
+    { name: 'Tim', email: 'tim@netscape.com', phone: '323-555-1234', address: '6539 Wilton Ave. </br> Culver City CA 90234', status: 'busy' },
+    { name: 'Patrick', email: 'patrick@live.com', phone: '323-555-1234', address: '6539 Wilton Ave. </br> Culver City CA 90234', status: 'online' },
+    { name: 'Jacques', email: 'jacques@aol.com', phone: '323-555-1234', address: '6539 Wilton Ave. </br> Culver City CA 90234', status: 'online' }
 ];
 
 // Create Name List
@@ -63,7 +63,6 @@ function makeUL(array, element) {
             // Create Dropdown Menu onclick
             var dropDownDiv = document.createElement('div');
             dropDownDiv.classList.add("dropdown", "col-8", "d-none");
-
             var mailto = document.createElement('p');
             var aMail = document.createElement('a');
             aMail.appendChild(document.createTextNode(array[i].email));
@@ -73,7 +72,6 @@ function makeUL(array, element) {
             var phoneNumber = document.createElement('p');
             phoneNumber.appendChild(document.createTextNode(array[i].phone));
             dropDownDiv.appendChild(phoneNumber);
-
             var address = document.createElement('p');
             address.innerHTML = array[i].address;
             dropDownDiv.appendChild(address);
@@ -81,11 +79,10 @@ function makeUL(array, element) {
 
         } else if (element === "email") {
             item.appendChild(document.createTextNode(array[i].email));
-        } else {
+        } else { // element ==="phone"
             item.appendChild(document.createTextNode(array[i].phone));
         }
 
-        // Add it to the list:
         list.appendChild(item);
     }
 
