@@ -28,3 +28,6 @@ https://drewbefore.github.io/skills-assessment/
     * Solution : 
         1. Set up with bootstrap Active class allowing only one class to be active at at a time
         2. Loop through javascript and deactive others before Activating the name that was clicked on.
+* Component based Design
+    * Currently: The Widget is split into different lists.
+    * Solution: I need to refactor the code to create a component based design. Where each contact is itself a component including name, email, phone number, and dropdown. Css would have to be corrected after moving the JS around.
